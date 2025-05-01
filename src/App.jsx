@@ -29,7 +29,7 @@ function App() {
             })
             .catch((err) => {
                 setError(err.message); //Tangani pesan error
-                setLoading(true); //Mengatur loading
+                setLoading(false); //Mengatur loading
                 console.log(err);
             });
     }, [saveInputCityName]); //useEffect akan jalan ketika input berubah
