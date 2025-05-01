@@ -20,7 +20,7 @@ function App() {
         if (saveInputCityName === "") return; //Validasi input kosong
         // Make GET request to fetch data
         axios
-            .get("http://api.weatherapi.com/v1/forecast.json?key=a25d2e5eb1bc42e88c5110816252504&q="+ saveInputCityName + "&days=5&aqi=no&alerts=no")
+            .get("https://api.weatherapi.com/v1/forecast.json?key=a25d2e5eb1bc42e88c5110816252504&q="+ saveInputCityName + "&days=5&aqi=no&alerts=no")
             .then((response) => {
                 setDataWeather(response.data); //Simpan data cuaca
                 setLoading(false); //Mengatur loading ke false
